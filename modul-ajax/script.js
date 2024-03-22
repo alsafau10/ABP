@@ -15,8 +15,15 @@ $(document).ready(function() {
             var row = '<tr><td>' + title + '</td><td>' + description + '</td></tr>';
             tbody.append(row);
           });
+          
           var hiddenText = $(xml).find('hidden_text').text();
-          $("#hidden-text").text(hiddenText).show();
+          var hiddenTextElement = $("#hidden-text");
+          
+          if (hiddenTextElement.is(":visible")) {
+            hiddenTextElement.hide();
+          } else {
+            hiddenTextElement.text(hiddenText).show();
+          }
         },
         error: function(xhr, status, error) {
           console.error("Error:", status, error);

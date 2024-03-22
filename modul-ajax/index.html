@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Hidden Text with Ajax and XML</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        #hidden-text {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Show Hidden Text with Ajax and XML</h2>
+    <button id="load-data">Load Data</button>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="data-body">
+        </tbody>
+    </table>
+    <div id="hidden-text">
+        This text was hidden, but now it's shown!
+    </div>
+</body>
+
+</html>
